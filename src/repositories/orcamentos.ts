@@ -4,6 +4,7 @@ import { orcamentoSchema, validar, type OrcamentoInput, type OrcamentoValidado }
 import {
   ErroDeRegra,
   ROTULO_STATUS_ATENDIMENTO,
+  ROTULO_STATUS_ORCAMENTO,
   type DescontoBase,
   type ModoCobranca,
   type StatusAtendimento,
@@ -315,7 +316,7 @@ export async function mudarStatusOrcamento(db: Db, id: number, novo: StatusOrcam
         'SELECT id, status FROM atendimentos WHERE orcamento_id = ?', [id]);
       if (at && at.status !== 'aguardando_agendamento') {
         throw new ErroDeRegra(
-          `Não dá para mudar este orçamento para "${novo}": o atendimento já está ` +
+          `Não dá para mudar este orçamento para "${ROTULO_STATUS_ORCAMENTO[novo]}": o atendimento já está ` +
             `"${ROTULO_STATUS_ATENDIMENTO[at.status]}". Volte o atendimento para ` +
             '"Aguardando agendamento" primeiro.'
         );
