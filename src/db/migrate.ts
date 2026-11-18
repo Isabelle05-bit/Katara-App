@@ -1,4 +1,4 @@
-import type { SQLiteDatabase } from 'expo-sqlite';
+import type { Db } from './tipos';
 import { LATEST_VERSION, MIGRATIONS } from './migrations';
 
 /**
@@ -8,7 +8,7 @@ import { LATEST_VERSION, MIGRATIONS } from './migrations';
  * 2. Lê a versão do banco (PRAGMA user_version).
  * 3. Roda, em ordem, só as migrações que ainda não rodaram.
  */
-export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
+export async function migrateDbIfNeeded(db: Db): Promise<void> {
   // Precisa vir ANTES de qualquer transação: o SQLite ignora este PRAGMA
   // se for executado dentro de uma.
   await db.execAsync(`
@@ -16,7 +16,7 @@ export async function migrateDbIfNeeded(db: SQLiteDatabase): Promise<void> {
     PRAGMA foreign_keys = ON;
   `);
 
-  const row = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version');
+  const row = await db.getFirstAsync<{ user_version: number }>('PRAGMA user_version', []);
   const currentVersion = row?.user_version ?? 0;
 
   // Backup restaurado de uma versão mais nova do app: recusa, não tenta adivinhar.

@@ -152,6 +152,14 @@ CREATE INDEX idx_orc_ferramentas_ferr      ON orcamento_ferramentas(ferramenta_i
 CREATE INDEX idx_orc_funcionarios_func     ON orcamento_funcionarios(funcionario_id);
 `;
 
-export const MIGRATIONS: readonly string[] = [V1_SCHEMA_INICIAL];
+// Dashboard: "previsto dos aprovados do mês" precisa saber QUANDO foi aprovado,
+// não quando foi criado (um orçamento de outubro aprovado em novembro é receita
+// de novembro). Preenchido em UTC ao aprovar; volta a NULL ao sair de aprovado.
+const V2_APROVADO_EM = `
+ALTER TABLE orcamentos ADD COLUMN aprovado_em TEXT;
+CREATE INDEX idx_orcamentos_aprovado_em ON orcamentos(aprovado_em);
+`;
+
+export const MIGRATIONS: readonly string[] = [V1_SCHEMA_INICIAL, V2_APROVADO_EM];
 
 export const LATEST_VERSION = MIGRATIONS.length;
