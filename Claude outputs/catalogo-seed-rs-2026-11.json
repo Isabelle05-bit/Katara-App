@@ -1,0 +1,329 @@
+{
+  "versao_schema": 1,
+  "consultado_em": "2026-11-18",
+  "regiao_referencia": "Porto Alegre e região metropolitana (RS)",
+  "aviso": "Preços de referência colhidos em lojas online nacionais (Telhanorte, MadeiraMadeira, Magazine Luiza) e faixas de mão de obra publicadas na imprensa e em portais de reforma. Nenhum preço foi confirmado em loja física de Porto Alegre. Valores em centavos. Conferir com o Anderson antes do uso.",
+  "materiais": [
+    {
+      "chave": "tinta-coral-rende-muito-18l",
+      "nome": "Tinta acrílica Coral Rende Muito branca 18L",
+      "unidade": "lata 18L",
+      "categoria": "tinta",
+      "preco": 42990,
+      "loja": "Telhanorte (preço online, referência; não é loja de POA)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/tinta-coral-rende-muito-acrilica-fosca-branco-18l-1325/p",
+        "confianca": "baixa",
+        "nota": "Preço lido num rastreador de preços do Telhanorte, sem data exata. Rendimento de 170 m² acabado (2 demãos, diluída 50-80%) é do fabricante."
+      }
+    },
+    {
+      "chave": "tinta-suvinil-toque-fosco-completo-18l",
+      "nome": "Tinta acrílica Suvinil Toque Fosco Completo 18L",
+      "unidade": "lata 18L",
+      "categoria": "tinta",
+      "preco": 66990,
+      "loja": "Telhanorte (preço online, referência; não é loja de POA)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/tinta-acrilica-toque-fosco-completo-18l-cromio-suvinil-2542838/p",
+        "confianca": "media",
+        "nota": "Preço de cartão (Pix sai ~6% menor). Varia por cor: R$ 669,90 a R$ 729,90. Rendimento: até 150 m² por demão (páginas do Telhanorte)."
+      }
+    },
+    {
+      "chave": "selador-acrilico-coral-18l",
+      "nome": "Selador acrílico Coral branco 18L",
+      "unidade": "lata 18L",
+      "categoria": "preparo",
+      "preco": 22990,
+      "loja": "Telhanorte (preço online, referência; não é loja de POA)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/seladora-acrilico-18l-coral-577715/p",
+        "confianca": "media",
+        "nota": "Duas leituras do mesmo produto: R$ 229,90 e R$ 259,90. Rendimento até 100 m² por demão."
+      }
+    },
+    {
+      "chave": "massa-corrida-pva-coral-25kg",
+      "nome": "Massa corrida PVA Coral 25kg",
+      "unidade": "balde 25kg",
+      "categoria": "preparo",
+      "preco": 12273,
+      "loja": "MadeiraMadeira (preço online, referência)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.madeiramadeira.com.br/tintas-e-utilidades-para-pintura/massas-corrida-e-niveladora/14",
+        "confianca": "media",
+        "nota": "Preço promocional (de R$ 159,90). Rendimento de massa PVA 25kg: 50 a 70 m² por demão (boletins Hydronorth/PHD e ficha Sulan)."
+      }
+    },
+    {
+      "chave": "massa-corrida-pva-iquine-25kg",
+      "nome": "Massa corrida PVA Iquine 25kg",
+      "unidade": "balde 25kg",
+      "categoria": "preparo",
+      "preco": 11400,
+      "loja": "Magazine Luiza (preço online, referência)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.zoom.com.br/massa-corrida?page=9",
+        "confianca": "baixa",
+        "nota": "Listagem de comparador, sem data."
+      }
+    },
+    {
+      "chave": "massa-corrida-pva-suvinil-premium-25kg",
+      "nome": "Massa corrida Suvinil Premium 25kg",
+      "unidade": "lata 25kg",
+      "categoria": "preparo",
+      "preco": 13912,
+      "loja": "MadeiraMadeira (preço online, referência)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.madeiramadeira.com.br/tintas-e-utilidades-para-pintura/massas-corrida-e-niveladora/8",
+        "confianca": "media"
+      }
+    },
+    {
+      "chave": "massa-acrilica-suvinil-25kg",
+      "nome": "Massa acrílica Suvinil branca 25kg (áreas externas/úmidas)",
+      "unidade": "lata 25kg",
+      "categoria": "preparo",
+      "preco": 23990,
+      "loja": "Telhanorte (preço online, referência; não é loja de POA)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/massa-acrilica-25kg-suvinil-1598309/p?skuId=1598309",
+        "confianca": "media",
+        "nota": "Rendimento até 75 m² por demão. Sem receita vinculada nesta versão."
+      }
+    },
+    {
+      "chave": "fita-crepe-48mm-50m",
+      "nome": "Fita crepe 48mm x 50m",
+      "unidade": "rolo",
+      "categoria": "consumivel",
+      "preco": 1242,
+      "loja": "Magazine Luiza (kit com 6 rolos)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.magazineluiza.com.br/busca/fita+gr",
+        "confianca": "baixa",
+        "nota": "Kit de 6 rolos Adere a R$ 74,50, dividido por 6 = R$ 12,42 por rolo."
+      }
+    },
+    {
+      "chave": "lona-plastica-4x5m",
+      "nome": "Lona plástica preta 4m x 5m",
+      "unidade": "unidade",
+      "categoria": "consumivel",
+      "preco": 3090,
+      "loja": "Telhanorte (preço online, referência; não é loja de POA)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/tintas/acessorios-para-pintura?PS=20",
+        "confianca": "media"
+      }
+    },
+    {
+      "chave": "lixa-madeira-g100-folha",
+      "nome": "Lixa Norton A237 grão 100 (folha)",
+      "unidade": "folha",
+      "categoria": "consumivel",
+      "preco": 129,
+      "loja": "Telhanorte (preço online, referência; não é loja de POA)",
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/tintas/acessorios-para-pintura?PS=20",
+        "confianca": "media",
+        "nota": "Preço achado foi do grão 100; para massa corrida o comum é grão 150-220. Ajustar com o Anderson."
+      }
+    }
+  ],
+  "ferramentas": [
+    {
+      "chave": "escada-aluminio-7-degraus",
+      "nome": "Escada de alumínio 7 degraus (doméstica)",
+      "valor_compra": 25690,
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/escada-domestica-de-aluminio-7-degraus-botafogo-1440195/p",
+        "confianca": "media",
+        "nota": "Outros modelos de 7 degraus variam de R$ 220 a R$ 290."
+      }
+    },
+    {
+      "chave": "rolo-la-23cm-com-suporte",
+      "nome": "Rolo de lã 23cm com suporte (Condor)",
+      "valor_compra": 3390,
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/rolo-de-la-com-suporte-23cm-condor-2381087/p",
+        "confianca": "media",
+        "nota": "Lã de 9mm, para superfície lisa."
+      }
+    },
+    {
+      "chave": "kit-pintura-3-pecas",
+      "nome": "Kit de pintura 3 peças (rolo de lã 23cm, bandeja e suporte)",
+      "valor_compra": 9069,
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.pontofrio.com.br/kit-pintura-com-rolo-de-la-sem-respingo-23cm-branco-com-bandeja-e-suporte-dtools/p/1582442806",
+        "confianca": "media"
+      }
+    },
+    {
+      "chave": "espatula-aco-10cm",
+      "nome": "Espátula de aço 10cm",
+      "valor_compra": 1690,
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.telhanorte.com.br/espatula-de-aco-de-10cm-857-condor-2553678/p",
+        "confianca": "media"
+      }
+    },
+    {
+      "chave": "desempenadeira-aco-lisa-42x12",
+      "nome": "Desempenadeira de aço lisa 42 x 12cm",
+      "valor_compra": 4290,
+      "meta": {
+        "consultado_em": "2026-11-18",
+        "fonte": "https://www.lojadomecanico.com.br/compel",
+        "confianca": "baixa",
+        "nota": "A listagem tinha preços de itens vizinhos misturados; confirmar na loja."
+      }
+    }
+  ],
+  "servicos": [
+    {
+      "chave": "pintura-interna-parede",
+      "nome": "Pintura interna de parede (repintura, 2 demãos)",
+      "preco_m2": 2500,
+      "descricao": "Repintura de paredes internas em bom estado, com proteção do ambiente e lixa leve.",
+      "observacoes": "Só mão de obra. Referência de mercado para pintor autônomo (faixas de R$ 12 a R$ 45 por m² nas fontes consultadas). Anderson deve ajustar ao próprio preço.",
+      "receita": [
+        {
+          "material": "tinta-coral-rende-muito-18l",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.0059
+        },
+        {
+          "material": "fita-crepe-48mm-50m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.02
+        },
+        {
+          "material": "lona-plastica-4x5m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.015
+        },
+        {
+          "material": "lixa-madeira-g100-folha",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.1
+        }
+      ]
+    },
+    {
+      "chave": "pintura-teto",
+      "nome": "Pintura de teto (2 demãos)",
+      "preco_m2": 2800,
+      "descricao": "Pintura de teto/forro com proteção do ambiente e lixa leve.",
+      "observacoes": "Só mão de obra. Referência: R$ 18 a R$ 32 por m² de teto (Lar Pontual, 2026).",
+      "receita": [
+        {
+          "material": "tinta-coral-rende-muito-18l",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.0059
+        },
+        {
+          "material": "fita-crepe-48mm-50m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.02
+        },
+        {
+          "material": "lona-plastica-4x5m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.015
+        },
+        {
+          "material": "lixa-madeira-g100-folha",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.1
+        }
+      ]
+    },
+    {
+      "chave": "massa-corrida-e-pintura-interna",
+      "nome": "Massa corrida + pintura interna",
+      "preco_m2": 5500,
+      "descricao": "Correção com massa corrida (2 demãos), lixa, selador e 2 demãos de tinta em paredes internas.",
+      "observacoes": "Só mão de obra. Fontes divergem: acima de R$ 40 (Correio Braziliense) a R$ 65 (Monitor do Mercado).",
+      "receita": [
+        {
+          "material": "massa-corrida-pva-coral-25kg",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.04
+        },
+        {
+          "material": "selador-acrilico-coral-18l",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.01
+        },
+        {
+          "material": "tinta-coral-rende-muito-18l",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.0059
+        },
+        {
+          "material": "lixa-madeira-g100-folha",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.3
+        },
+        {
+          "material": "fita-crepe-48mm-50m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.02
+        },
+        {
+          "material": "lona-plastica-4x5m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.015
+        }
+      ]
+    },
+    {
+      "chave": "pintura-externa-fachada",
+      "nome": "Pintura externa / fachada (selador + 2 demãos)",
+      "preco_m2": 4200,
+      "descricao": "Selador e 2 demãos de tinta acrílica em paredes externas, sem andaime.",
+      "observacoes": "Só mão de obra, sem andaime ou acesso difícil. Referência: R$ 25 a R$ 45 por m² (Monitor do Mercado) e a partir de R$ 45 (fachada simples).",
+      "receita": [
+        {
+          "material": "selador-acrilico-coral-18l",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.01
+        },
+        {
+          "material": "tinta-coral-rende-muito-18l",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.0059
+        },
+        {
+          "material": "fita-crepe-48mm-50m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.01
+        },
+        {
+          "material": "lona-plastica-4x5m",
+          "tipo_calculo": "por_m2",
+          "consumo": 0.01
+        }
+      ]
+    }
+  ]
+}
