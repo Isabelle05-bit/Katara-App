@@ -42,8 +42,21 @@ export function criarDbEmMemoria(): Db & { raw: Database.Database } {
   return db;
 }
 
+/**
+ * Banco migrado e com o catálogo VAZIO. A migração V3 carrega o catálogo
+ * inicial do app, mas os testes de repositório montam o próprio catálogo e
+ * contam registros, então partem do zero. O catálogo inicial é testado em
+ * src/db/catalogoInicial.test.ts, que usa criarDbEmMemoria direto.
+ */
 export async function criarDbMigrado() {
   const db = criarDbEmMemoria();
   await migrateDbIfNeeded(db);
+  db.raw.exec(`
+    DELETE FROM servico_materiais;
+    DELETE FROM materiais;
+    DELETE FROM ferramentas;
+    DELETE FROM servicos;
+    DELETE FROM sqlite_sequence WHERE name IN ('materiais', 'ferramentas', 'servicos');
+  `);
   return db;
 }

@@ -10,7 +10,7 @@
     "backgroundColor": "#0C0B0A",
     "android": {
       "package": "br.com.katarapinturas.app",
-      "versionCode": 1,
+      "versionCode": 2,
       "adaptiveIcon": {
         "backgroundColor": "#000000",
         "foregroundImage": "./assets/images/logo.png"
@@ -41,6 +41,17 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "33e167cc-c0db-43e6-9316-394fff16cc31"
+      }
+    },
+    "owner": "isabelletrampusch"
   }
 }

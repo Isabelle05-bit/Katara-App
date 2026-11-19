@@ -410,7 +410,7 @@ describe('dashboard', () => {
     expect(d.lucroPrevistoMes).toBe(125000);
     expect(d.pendentesQtd).toBe(1);
     expect(d.pendentesValor).toBe(200000);
-    expect(d.valorFerramentas).toBe(15000);
+    expect(d).not.toHaveProperty('valorFerramentas');
     expect(d.recentes.map((o) => o.id)).toEqual([pendente, outubro, novembro]);
   });
 });

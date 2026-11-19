@@ -82,12 +82,6 @@ export default function Inicio() {
           </View>
 
           <View style={{ flexDirection: 'row', gap: 12 }}>
-            <Card style={{ flex: 1, gap: 6, padding: 14 }}>
-              <Texto variante="rotulo">Valor em ferramentas</Texto>
-              <Texto variante="valor" adjustsFontSizeToFit numberOfLines={1}>
-                {formatarBRL(d.valorFerramentas)}
-              </Texto>
-            </Card>
             <Card
               style={{ flex: 1, gap: 6, padding: 14, borderColor: 'rgba(255,200,87,0.35)' }}
               onPress={() => router.push({ pathname: '/orcamentos', params: { status: 'pendente' } })}

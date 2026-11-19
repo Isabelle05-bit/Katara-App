@@ -9,7 +9,6 @@ export interface Dashboard {
   aprovadosMes: number;
   pendentesQtd: number;
   pendentesValor: number;
-  valorFerramentas: number;
   recentes: OrcamentoResumo[];
 }
 
@@ -20,7 +19,7 @@ export interface Dashboard {
 export async function carregarDashboard(db: Db, hoje = new Date(), qtdRecentes = 5): Promise<Dashboard> {
   const { inicio, fim } = intervaloDoMesUtc(hoje.getFullYear(), hoje.getMonth() + 1);
 
-  const [mes, pendentes, ferramentas, recentes] = await Promise.all([
+  const [mes, pendentes, recentes] = await Promise.all([
     db.getFirstAsync<{ previsto: number; lucro: number; qtd: number }>(
       `SELECT COALESCE(SUM(total_cliente), 0) previsto, COALESCE(SUM(lucro), 0) lucro, COUNT(*) qtd
          FROM orcamentos
@@ -32,10 +31,6 @@ export async function carregarDashboard(db: Db, hoje = new Date(), qtdRecentes =
          FROM orcamentos WHERE status = 'pendente' AND arquivado = 0`,
       []
     ),
-    db.getFirstAsync<{ valor: number }>(
-      'SELECT COALESCE(SUM(valor_compra), 0) valor FROM ferramentas WHERE arquivado = 0',
-      []
-    ),
     listarOrcamentos(db, { limite: qtdRecentes }),
   ]);
 
@@ -45,7 +40,6 @@ export async function carregarDashboard(db: Db, hoje = new Date(), qtdRecentes =
     aprovadosMes: mes?.qtd ?? 0,
     pendentesQtd: pendentes?.qtd ?? 0,
     pendentesValor: pendentes?.valor ?? 0,
-    valorFerramentas: ferramentas?.valor ?? 0,
     recentes,
   };
 }

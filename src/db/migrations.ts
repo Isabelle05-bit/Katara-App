@@ -10,6 +10,8 @@
  *   AAAA-MM-DD HH:MM:SS, em UTC quando vierem do datetime('now')).
  */
 
+import { V3_CATALOGO_INICIAL } from './catalogoInicial';
+
 const V1_SCHEMA_INICIAL = `
 -- ============ CADASTROS ============
 
@@ -160,6 +162,6 @@ ALTER TABLE orcamentos ADD COLUMN aprovado_em TEXT;
 CREATE INDEX idx_orcamentos_aprovado_em ON orcamentos(aprovado_em);
 `;
 
-export const MIGRATIONS: readonly string[] = [V1_SCHEMA_INICIAL, V2_APROVADO_EM];
+export const MIGRATIONS: readonly string[] = [V1_SCHEMA_INICIAL, V2_APROVADO_EM, V3_CATALOGO_INICIAL];
 
 export const LATEST_VERSION = MIGRATIONS.length;
